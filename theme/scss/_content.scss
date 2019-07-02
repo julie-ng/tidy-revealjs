@@ -1,0 +1,31 @@
+// Talk specific styling
+
+img {
+	&[src="./images/intro/graph-1-simple.png"] {
+		margin: 5em auto;
+		width: 250px;
+	}
+
+	&[src="./images/intro/graph-2-devices.png"] {
+		margin: 5em auto;
+		width: 350px;
+	}
+
+	&[src="./images/intro/graph-3-bffs.png"] {
+		// margin: 1em 0;
+		width: 300px;
+	}
+
+	&[src="./images/architecture/dependencies.png"] {
+		margin: -1em auto 0;
+		width: 500px;
+	}
+
+	&[src="./images/organizations/open-office.jpg"] {
+		border: 10px solid white !important;
+	}
+
+	// &.img-dashboard {
+	// 	height: 400px;
+	// }
+}

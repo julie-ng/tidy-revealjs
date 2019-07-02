@@ -1,0 +1,32 @@
+@font-face{
+	font-family: 'Fira Sans';
+	src: url('./../../theme/fonts/FiraSans-Regular.eot');
+	src: url('./../../theme/fonts/FiraSans-Regular.eot') format('embedded-opentype'),
+			 url('./../../theme/fonts/FiraSans-Regular.woff2') format('woff2'),
+			 url('./../../theme/fonts/FiraSans-Regular.woff') format('woff'),
+			 url('./../../theme/fonts/FiraSans-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+@font-face{
+	font-family: 'Fira Sans Semibold';
+	src: url('./../../theme/fonts/FiraSans-SemiBold.eot');
+	src: url('./../../theme/fonts/FiraSans-SemiBold.eot') format('embedded-opentype'),
+			 url('./../../theme/fonts/FiraSans-SemiBold.woff2') format('woff2'),
+			 url('./../../theme/fonts/FiraSans-SemiBold.woff') format('woff'),
+			 url('./../../theme/fonts/FiraSans-SemiBold.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'Roboto';
+	src: url('./../../theme/fonts/Roboto-Regular.eot');
+	src: url('./../../theme/fonts/Roboto-Regular.eot') format('embedded-opentype'),
+			 url('./../../theme/fonts/Roboto-Regular.woff') format('woff'),
+			 url('./../../theme/fonts/Roboto-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}

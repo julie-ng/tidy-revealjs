@@ -1,0 +1,40 @@
+.reveal {
+	.slides {
+		text-align: left;
+	}
+
+	.controls {
+		color: #fff;
+	}
+
+	.progress {
+		color: var(--progress-bar-color);
+	}
+
+	pre, code {
+		font-family: var(--code-font);
+		font-size: 0.85em;
+	}
+
+	// .hljs {
+	// 	background: var(--code-bg-color);
+	// 	padding: 1em;
+	// 	font-size: 0.8em;
+	// }
+}
+
+h1 + pre {
+	margin-top: -3em;
+}
+
+.slides section img {
+  border: none;
+  box-shadow: none;
+}
+
+// Prism.js Override
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: var(--code-bg-color);
+}

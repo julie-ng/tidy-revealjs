@@ -1,0 +1,9 @@
+{{#each slides}}
+	{{#if this.slides }}
+		<section>
+			{{>slides this }}
+		</section>
+	{{ else }}
+		{{> (lookup . 'type') }}
+	{{/if }}
+{{/each}}

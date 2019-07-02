@@ -1,0 +1,32 @@
+
+:root {
+	// Colors
+  --background-color: #101f27;
+  --text-color: #eee;
+  --light-text-color: #999;
+  --primary-color: #50c3c9;
+  --secondary-color:  #f75323; //#ca2d00;  // rgb(247,83,35);
+  --link-color: var(--primary-color);
+  --link-hover-color: var(--primary-color);
+  --border-color: #eee;
+  --bullet-color: var(--secondary-color);
+  --nested-bullet-color: var(--primary-color);
+  --heading-block-color: var(--primary-color);
+  --faded-heading-color: #48555a;
+  --code-bg-color: #0a161b;
+  --yellow: #fcd534;
+
+  // Layout
+  --progress-bar-color: var(--heading-block-color);
+
+  // Fonts
+  --body-font: 'Roboto', -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --heading-font: 'Fira Sans Semibold', -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --code-font: Monaco, Consolas, Monaco, 'Andale Mono', monospace;
+
+
+  --base-font-size: 24px;
+  --sm-font-size: 0.9em;
+  --xs-font-size: 0.7em;
+  --quote-font-size: 2rem;
+}

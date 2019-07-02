@@ -1,0 +1,78 @@
+body {
+	font-family: var(--body-font);
+	font-size: var(--base-font-size);
+	font-weight: 400;
+	line-height: 1.2em;
+}
+
+p, li {
+	line-height: 1.4em;
+}
+
+p {
+	margin: 1em 0;
+}
+
+td, li, blockquote {
+	strong {
+		color: var(--primary-color);
+		em {
+			color: var(--secondary-color);
+		}
+	}
+}
+
+// Headings
+// --------
+
+h1 {
+	font-family: var(--heading-font);
+	font-weight: 400;
+	font-size: 3.5rem;
+	line-height: 1em;
+	margin-bottom: 1.2em;
+}
+
+.section-title {
+	h1 {
+		max-width: 50%;
+		margin: 4em 0 1em;
+		font-size: 4rem;
+		line-height: 1.15em;
+	}
+
+	h2 {
+		color: var(--faded-heading-color);
+	}
+}
+
+
+// Quotes
+// ------
+
+cite {
+	font-size: var(--xs-font-size);
+	color: var(--light-text-color);
+
+	a:link, a:visited {
+		color: var(--light-text-color);
+	}
+}
+
+table + cite {
+	margin-top: -2em;
+}
+
+.blockquote {
+	margin-left: 3em;
+	margin-right: 3em;
+	max-width: 60em;
+	padding: 0.5em 1.5em;
+	font-size: var(--quote-font-size);
+	line-height: 1.3em;
+	// border: 1px solid var(--faded-heading-color);
+	border-left: 10px solid var(--primary-color);
+	// background-color: #0f2833;
+	background: #eee;
+	color: #555;
+}

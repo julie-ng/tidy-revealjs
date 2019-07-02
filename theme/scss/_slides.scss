@@ -1,0 +1,125 @@
+// Default Slide Layout
+// --------------------
+
+section {
+
+	// Slide subheading (grey text, smaller font)
+	& > p:first-child {
+		margin: 0 0 0.9em;
+		font-size: 0.8em;
+		line-height: 1em;
+		text-transform: uppercase;
+		color: var(--faded-heading-color);
+	}
+
+	// Slide subtitle
+	& > h1 {
+		&::after {
+			display: block;
+			content: ' ';
+			margin-top: 10px;
+			width: 100px;
+			height: 8px;
+			background: var(--heading-block-color);
+		}
+	}
+}
+
+
+// Root Title Slide
+// ----------------
+
+.presentation-title {
+	li {
+		p {
+			display: inline-block;
+			margin-top: 0;
+		}
+	}
+}
+
+
+// Section Titles
+// --------------
+
+.section-number {
+	position: absolute;
+	bottom: 0;
+	display: block;
+	text-align: right;
+	width: 50%;
+	font-family: var(--heading-font);
+	font-size: 20rem;
+	opacity: 0.1;
+}
+
+.section-title {
+	.slide-background-content {
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: top 50% left 90%;
+	}
+}
+
+
+// Quote and Conclusion Slides
+// ---------------------------
+
+.section-conclusion,
+.slide-quote {
+	h1 {
+		&::after {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}
+
+.section-conclusion {
+	p {
+		text-transform: uppercase;
+		font-size: var(--sm-font-size);
+		color: var(--light-text-color);
+	}
+
+	// .slide-background-content {
+	// 	background: var(--primary-color);
+	// }
+
+	text-align: center;
+	// color: #111;
+}
+
+
+// Quote slide
+// -----------
+
+.slide-quote {
+	text-align: center;
+
+	blockquote {
+		// font-style: italic;
+		max-width: 65%;
+		margin-left: auto;
+		margin-right: auto;
+
+		p:first-child {
+			margin-top: 0;
+		}
+
+		&::before {
+			display: inline-block;
+			width: .65em;
+			height:.65em;
+			// margin-top: 3em;
+			content: '“';
+			font-family: 'Bookman Old Style', Georgia, Times, Serif;
+			font-size: 5em;
+			line-height: 1.1;
+			vertical-align: baseline;
+			text-align: center;
+			background: var(--secondary-color);
+			border-radius: 100%
+		}
+	}
+}

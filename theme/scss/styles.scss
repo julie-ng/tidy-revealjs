@@ -1,0 +1,34 @@
+@import "vars";
+@import "base";
+@import "fonts";
+@import "typography";
+@import "lists";
+@import "slides";
+@import "content";
+@import "overrides";
+
+
+// Slides with 1/2 list, 1/2 code
+
+section[data-markdown-parsed="true"] {
+	h1 + ul {
+		max-width: 50%;
+	}
+}
+
+ul + pre {
+	position: absolute;
+	right: 0;
+	top: 7em;
+	width: 50%;
+	padding: 0.5em;
+	tab-size: 4;
+
+	code {
+		padding: 1em;
+	}
+}
+
+pre + pre {
+	margin-top: 1em;
+}
