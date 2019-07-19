@@ -2,45 +2,51 @@
 
 A custom theme and build system for reveal.js
 
-### Theme
-
-Theoretically it's enough to just take the CSS. Image preview:
-
-## Build System
-
-I love reveal.js for its ability to let me do slide with code directly in the browser and with markdown. Theming and slide management is however tricky. Moving slides means navigating yourself in a potentially large and nested DOM tree.
+I love [reveal.js](https://github.com/hakimel/reveal.js) for its ability to let me do slide with code directly in the browser and with [markdown](https://github.com/hakimel/reveal.js/#markdown). Theming and slide management is however tricky. Moving slides means navigating yourself in a potentially large and nested DOM tree.
 
 What if instead you just wrote markdown and the slides were automatically generated for you?
 
-### File Structure Determines Presentation
+### Preview
+
+This [WorkerConf slide](https://github.com/julie-ng/workerconf-slides) was created using just markdown:
+
+![Preview](./preview.png)
+
+
+## Slides via File Structure  
 
 When it comes to content, there is no `index.html` with slides. Instead, you create files inside the `slides` folder, which are loaded in alphabetical order.
 
 ### How to re-order slides
 
-Because the slides are determined by alphabetical order, the easiest way to manage order of your slides is to prepend their filenames with numbers. For example, given:
+- slide order is determined by alphabetical order
+- subfolders are interpreted as [vertical slides](https://github.com/hakimel/reveal.js/#vertical-slide-navigation)
 
-| Slide Order | Example 1 | Example 2 |
-|:--|:--|:--|
-| 1 | hello | 1-cat |
-| 2 | world | 2-apple |
+Here is an example file structure for `slides/`
 
+```
+./slides
+├── 1.html
+├── 2.md
+├── 3.md
+└── base
+    ├── bulleted-lists.md
+    ├── ordered-lists.md
+    ├── tables-as-html.html
+    └── tables.md
+```
 
-### Vertical Slides
+The easiest way to manage order of your slides is to **prepend the filenames with numbers**, for example:
 
-To create vertical chapters, just include a subfolder.
-
+```
+├── 1-title.html
+├── 2.md
+├── 3-point-of-view.md
+├── 4-markdown-support.html
+```
 
 ## Slide Types: HTML vs Markdown
 
-### HTML Slides
+- **HTML Slides** must have `<section>` as root element.
+- **Markdown Slides** have the `.md` extension.
 
-- must have `<section>` as root tag.
-
-### Markdown Slides
-
-It is preferred to create slides using markdown. Just make sure they have the `.md` extension.
-
-#### Applying fragments
-
-Use the `.element`
