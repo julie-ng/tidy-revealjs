@@ -8,9 +8,12 @@ What if instead you just wrote markdown and the slides were automatically genera
 
 ### Preview
 
+- [This demo repository &rarr;](https://julie-ng.github.io/tidy-revealjs/)
+- [WorkerConf 2019 - Visualizing cloud architectures in real time with d3.js &rarr;](https://github.com/julie-ng/workerconf-slides)
+
 This [WorkerConf slide](https://github.com/julie-ng/workerconf-slides) was created using just markdown:
 
-![Preview](./preview.png)
+[![Preview](./preview.png)](https://github.com/julie-ng/workerconf-slides/#/5/2)
 
 ## Usage
 
