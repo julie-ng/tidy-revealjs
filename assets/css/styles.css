@@ -156,16 +156,32 @@ table + cite {
 
 ul {
   padding-left: .1em; }
-  ul ul {
-    margin-bottom: 1.5em;
-    padding-left: 1.5em; }
-    ul ul li::before {
-      color: var(--nested-bullet-color); }
+
+ol {
+  list-style: none;
+  counter-reset: counter; }
+  ol li {
+    counter-increment: counter; }
+    ol li::before {
+      content: counter(counter) ". ";
+      display: inline-block;
+      margin-right: 0.5em;
+      font-weight: bold; }
 
 li {
-  margin: 0.25em 0;
+  margin: 0.25em 0; }
+
+ol ol,
+ul ul {
+  margin-bottom: 1.5em;
+  padding-left: 1.5em; }
+
+ul ul li::before {
+  color: var(--nested-bullet-color); }
+
+ul li {
   list-style-type: none; }
-  li::before {
+  ul li::before {
     display: inline-block;
     position: relative;
     vertical-align: top;
