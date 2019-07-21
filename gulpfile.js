@@ -178,3 +178,4 @@ function build (done) {
 exports.default = build
 exports.build = build
 exports.dev = series(build, serve, watcher)
+exports.serve = series(serve)
