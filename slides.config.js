@@ -1,3 +1,3 @@
 module.exports = {
-	title: 'Demo: tidy-revealjs'
+	title: 'tidy-revealjs demo'
 }
