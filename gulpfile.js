@@ -39,7 +39,7 @@ function watcher () {
 	watch('theme/**/*.{hbs,html}', series(html, reload))
 	// watch('theme/fonts/**/*', series(fonts, reload))
 	// watch('images/**/*.{gif,jpg,png,svg}', series(images, reload))
-	watch('slides/**/*.{html,md}', series(parallel(markdown, html), reload))
+	watch('slides/**/*.{html,md}', series(html, reload))
 }
 
 
