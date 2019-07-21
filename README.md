@@ -12,6 +12,39 @@ This [WorkerConf slide](https://github.com/julie-ng/workerconf-slides) was creat
 
 ![Preview](./preview.png)
 
+## Usage
+
+First, clone this repository
+
+```
+git clone https://github.com/julie-ng/tidy-revealjs
+```
+
+Then install dependencies, including reveal.js
+
+```
+npm install
+```
+
+Then start development server including live-reload while you work on your slides:
+
+```
+npm run dev
+```
+
+A browser window will automatically open [http://localhost:3000/](http://localhost:3000/)
+
+### Config and Handlebars
+
+Inside `slides.config.js`, you can define variables to use your Handlebars template, for example:
+
+```
+module.exports = {
+	title: 'tidy-revealjs demo'
+}
+```
+
+and then you can use `{{ title }}` in handlebars.
 
 ## Slides via File Structure  
 
@@ -40,13 +73,58 @@ The easiest way to manage order of your slides is to **prepend the filenames wit
 
 ```
 ├── 1-title.html
-├── 2.md
-├── 3-point-of-view.md
-├── 4-markdown-support.html
+├── 20.md
+├── 30-point-of-view.md
+├── 40-markdown-support.html
 ```
+
+Tip: consider numbering your slides, e.g. 10, 20, 30… so you can insert and move content easily.
 
 ## Slide Types: HTML vs Markdown
 
 - **HTML Slides** must have `<section>` as root element.
 - **Markdown Slides** have the `.md` extension.
+
+### Speaker Notes
+
+This template supports the same syntax for notes as in reveal js. When running in development mode, press `s` key on your keyboard to open up the [speaker mode](https://github.com/hakimel/reveal.js#speaker-notes).
+
+In HTML, include an `<aside>` element at the end of your `<section>`
+
+```
+<aside class="notes">
+  <ul>
+    <li>Note one</li>
+    <li>Note two</li>
+    <li>Note three</li>
+  </ul>
+</aside>
+```
+
+Or in Markdown, everything after `Note:` is processed as a speaker note
+
+```
+Note:
+This is a note
+  - with a list
+  - another list item
+```
+
+For further examples of how to use this, please review my [WorkerConf slides &rarr;](https://github.com/julie-ng/workerconf-slides)
+
+## Todo
+
+- Setup generator?
+  - Better for re-use than cloning this repository
+  - Better for versioning [gulpfile.js](./gulpfile.js) that does the magic
+- Specify "build" folder? Currently this builds to root project directory, so I could publish slides via `master` branch on GitHub pages. Might be confusing for others, who want to publish elsewhere.
+- Clean up and test theme?
+
+## Credits
+
+This is just a template with some automation for creating slides. The heavy-lifting and presentation framework itself is [reveal.js](https://github.com/hakimel/reveal.js) and all credit goes to [Hakim El Hattab](https://github.com/hakimel) 👏
+
+### Photos
+- _Furniture, Desk, Chair and Table_ by [Minh Pham](https://unsplash.com/@minhphamdesign) on [Unsplash](https://unsplash.com/)
+- _Stack_ by [STIL](https://unsplash.com/@stilclassics) on [Unsplash](https://unsplash.com/)
 
