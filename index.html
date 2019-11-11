@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title>tidy-revealjs demo</title>
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+			<meta name="description" content="A custom theme and build system for reveal.js">
+		<meta name="author" content="Julie Ng">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -56,12 +56,12 @@
 										<h2>Examples of more complex layouts and styles</h2>
 									</section>		<section data-markdown="slides/presentations/10-example-data.md" data-separator-notes="^Note:"></section>		<section class="section-conclusion center">
 										<p>Conclusion #1</p>
-										<h1>Cloud is complex and not perfect</h1>
-										<h2>Neither are we ;-)</h2>
+										<h1>Example Conclusion</h1>
+										<h2>A longer subheadline</h2>
 									</section>		<section class="slide-quote">
-										<h1>Conway's Law</h1>
+										<h1>Example Quote</h1>
 										<blockquote>
-											<p>Organizations which design systems... are constrained to produce designs which are <strong>copies</strong> of the communication structures of these organizations.</p>
+											<p>Conway's Law: Organizations which design systems... are constrained to produce designs which are <strong>copies</strong> of the communication structures of these organizations.</p>
 											<cite>- Melvin Conway, "How Do Committees Invent?” Datamation (April 1968).</cite>
 										</blockquote>
 										<aside class="notes">
@@ -95,7 +95,8 @@
 					// { src: 'assets/vendor/revealjs/plugin/highlight/highlight.js', async: true },
 					// { src: 'assets/vendor/revealjs/plugin/search/search.js', async: true },
 					// { src: 'assets/vendor/revealjs/plugin/zoom-js/zoom.js', async: true },
-					// { src: 'assets/vendor/revealjs/plugin/notes/notes.js', async: true },
+					{ src: 'assets/vendor/revealjs/plugin/notes/notes.js', async: true },
+					{ src: 'assets/vendor/revealjs/plugin/notes-server/client.js', async: true },
 					{ src: 'assets/vendor/prism.js', async: true }
 					// { src: 'https://platform.twitter.com/widgets.js', async: true }
 				]
