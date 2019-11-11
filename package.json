@@ -6,8 +6,7 @@
   "scripts": {
     "build": "gulp build",
     "dev": "gulp dev",
-    "gulp": "gulp",
-    "serve": "gulp serve"
+    "start": "gulp serve"
   },
   "author": "Julie Ng <me@julie.io>",
   "license": "MIT",
