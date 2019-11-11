@@ -37,6 +37,7 @@ function serve (done) {
 function watcher () {
 	watch('theme/scss/**/*.scss', series(css, reload))
 	watch('theme/**/*.{hbs,html}', series(html, reload))
+	watch('theme/*.{hbs,html}', series(html, reload))
 	// watch('theme/fonts/**/*', series(fonts, reload))
 	// watch('images/**/*.{gif,jpg,png,svg}', series(images, reload))
 	watch('slides/**/*.{html,md}', series(html, reload))
