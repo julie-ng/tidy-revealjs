@@ -4,16 +4,16 @@ A custom theme and build system for reveal.js
 
 I love [reveal.js](https://github.com/hakimel/reveal.js) for its ability to let me do slide with code directly in the browser and with [markdown](https://github.com/hakimel/reveal.js/#markdown). Theming and slide management is however tricky. Moving slides means navigating yourself in a potentially large and nested DOM tree.
 
-What if instead you just wrote markdown and the slides were automatically generated for you?
+_**What if instead you just wrote markdown and the slides were automatically generated for you?**_ How? Continue to ["slides via file structure"](#slides-via-file-structure)
 
 ### Preview
 
 - [This demo repository &rarr;](https://julie-ng.github.io/tidy-revealjs/)
-- [WorkerConf 2019 - Visualizing cloud architectures in real time with d3.js &rarr;](https://github.com/julie-ng/workerconf-slides)
+- [WorkerConf 2019 - Visualizing cloud architectures in real time with d3.js &rarr;](https://github.com/julie-ng/newtonjs-talk-slides)
 
-This [WorkerConf slide](https://github.com/julie-ng/workerconf-slides) was created using just markdown:
+This [WorkerConf slide](https://github.com/julie-ng/newtonjs-talk-slides) was created using just markdown:
 
-[![Preview](./preview.png)](https://github.com/julie-ng/workerconf-slides/#/5/2)
+[![Preview](./preview.png)](https://github.com/julie-ng/newtonjs-talk-slides/#/5/2)
 
 ## Usage
 
@@ -113,7 +113,7 @@ This is a note
   - another list item
 ```
 
-For further examples of how to use this, please review my [WorkerConf slides &rarr;](https://github.com/julie-ng/workerconf-slides)
+For further examples of how to use this, please review my [WorkerConf slides &rarr;](https://github.com/julie-ng/newtonjs-talk-slides)
 
 ## Todo
 
