@@ -11,7 +11,7 @@
   "author": "Julie Ng <me@julie.io>",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.10",
     "del": "^4.1.1",
     "directory-tree": "^2.2.3",
     "gulp": "^4.0.2",
